@@ -108,8 +108,25 @@ h2.section{font-size:24px;margin:8px 0 4px;color:var(--greenD)}
 .conf{color:var(--ink2)}
 .c-high{color:#15724c;font-weight:600} .c-low{color:#b25a08}
 
+/* VIDEO */
+.videosec{padding:30px 0 4px}
+.vidcard{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:18px;display:grid;grid-template-columns:1.25fr 1fr;gap:20px;align-items:center}
+.vidwrap{position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000}
+.vidwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vidtext h2{margin:0 0 6px;color:var(--greenD);font-size:22px}
+.vidtext p{margin:0 0 10px;color:var(--ink2);font-size:14.5px}
+
+/* AUTHOR */
+.author{background:linear-gradient(160deg,#123c2b,#1f6f4f);color:#eef6f1;padding:40px 0;margin-top:30px}
+.author .q{font-size:clamp(20px,3vw,28px);font-weight:800;line-height:1.28;max-width:840px;margin:0 0 18px}
+.author .q span{color:#ffd36b}
+.author .name{font-size:20px;font-weight:800}
+.author .role{opacity:.92;margin:5px 0 16px;max-width:800px;font-size:15px}
+.author .links a{display:inline-block;background:#ffd36b;color:#123c2b;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;margin:4px 8px 0 0}
+.author .links a.ghost{background:transparent;color:#eef6f1;border:1.5px solid rgba(255,255,255,.55)}
+
 /* FOOTER */
-.foot{background:var(--greenD);color:#cfe3d8;padding:34px 0;margin-top:36px;font-size:14px}
+.foot{background:var(--greenD);color:#cfe3d8;padding:30px 0;margin-top:0;font-size:14px}
 .foot a{color:#ffd36b}
 .foot h3{color:#fff;margin:0 0 10px}
 .hide{display:none!important}
@@ -129,6 +146,7 @@ h2.section{font-size:24px;margin:8px 0 4px;color:var(--greenD)}
 }
 
 @media(max-width:760px){
+ .vidcard{grid-template-columns:1fr}
  .score{grid-template-columns:1fr;justify-items:center;text-align:center}
  .legend{grid-template-columns:1fr}
  .bignums{grid-template-columns:1fr 1fr}
@@ -160,6 +178,8 @@ h2.section{font-size:24px;margin:8px 0 4px;color:var(--greenD)}
  </div>
  <p class="meta">Source film: <a href="https://www.storyofstuff.org/movies/story-of-stuff/" style="color:#ffd36b">storyofstuff.org</a> (footnoted script) · Checked against EPA, FAO, UN/UNEP, BLS, IEA, USGS, ILO &amp; US Census · Compiled June 2026</p>
 </div></header>
+
+<section class="videosec"><div class="wrap"><div class="vidcard"><div class="vidwrap"><iframe src="https://www.youtube-nocookie.com/embed/9GorqroigqM" title="The Story of Stuff (2007)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="vidtext"><h2>🎬 Watch the original (2007)</h2><p>Annie Leonard's 21-minute film that started it all. Watch it, then scroll on to see how every number holds up in 2026.</p><p><a href="https://www.youtube.com/watch?v=9GorqroigqM" target="_blank" rel="noopener">Open on YouTube ↗</a></p></div></div></div></section>
 
 <main class="wrap">
 
@@ -859,6 +879,8 @@ h2.section{font-size:24px;margin:8px 0 4px;color:var(--greenD)}
     </article></section>
 
 </main>
+
+<section class="author"><div class="wrap"><div class="q">Manifestation is nothing but acting on what you want. <span>So what's stopping you?</span></div><div class="name">Reza Larimi</div><div class="role">Builder, fractional CTO and founder coach in deep tech & AI. Creator of the “Exit Without Execution” strategy and “The 99% Club,” two frameworks drawn from seven of my own ventures.</div><div class="links"><a href="https://www.linkedin.com/in/larimi/" target="_blank" rel="noopener">Wanna chat? Let's connect on LinkedIn →</a><a class="ghost" href="https://github.com/rezalari" target="_blank" rel="noopener">GitHub</a></div></div></section>
 
 <footer class="foot"><div class="wrap">
  <h3>How to read this</h3>
